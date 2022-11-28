@@ -79,7 +79,7 @@ To get a local copy up and running follow these simple example steps.
 -Reach to following Github URL:
 
 ```
-https://github.com/lukman155/Rosto.git
+https://github.com/AhmedMohsen600/math-calc.git
 
 ```
 
@@ -90,7 +90,7 @@ https://github.com/lukman155/Rosto.git
 -Type git clone in the terminal, paste the URL you copied earlier, and press "enter" to create your local clone.
 
 ```
-$ git clone https://github.com/lukman155/Rosto.git
+$ git clone https://github.com/AhmedMohsen600/math-calc.git
 ```
 
 # Install Dependencies(with following Command)
