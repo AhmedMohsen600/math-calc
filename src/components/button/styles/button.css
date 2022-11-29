@@ -1,0 +1,40 @@
+.btn {
+  display: grid;
+  place-content: center;
+  background-color: rgb(54, 52, 52);
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  border: 0;
+  font-size: 1.3rem;
+}
+
+.btn:hover {
+  background-color: #858593;
+}
+
+.light-gray {
+  background-color: #858593;
+  color: #000;
+}
+
+.light-gray:hover {
+  background-color: #fff;
+}
+
+.orange {
+  background-color: #f4913d;
+}
+
+.orange:hover {
+  background-color: #fff;
+  color: #f4913d;
+}
+
+.zero {
+  grid-column: 1 / span 2;
+  border-radius: 26px;
+  place-content: unset;
+  align-items: center;
+}
