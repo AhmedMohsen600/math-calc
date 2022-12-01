@@ -7,7 +7,9 @@ class Button extends PureComponent {
     const { className, handelClick, mark } = this.props;
     return (
       <button
-        onClick={handelClick.bind()}
+        onClick={() => {
+          handelClick(mark);
+        }}
         className={`${className}`}
         type="button"
       >
