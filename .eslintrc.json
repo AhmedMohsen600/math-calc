@@ -23,6 +23,9 @@
     "prettier"
   ],
   "rules": {
+    "react/no-access-state-in-setstate": "off",
+    "no-unused-vars":"off",
+    "react/no-unused-state": "off",
     "react/self-closing-comp": "off",
     "import/no-cycle":"off",
     "react/prop-types": "off",

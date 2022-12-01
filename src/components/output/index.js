@@ -4,7 +4,8 @@ import './styles/output.css';
 
 class Output extends PureComponent {
   render() {
-    return <div className="output"></div>;
+    const { value } = this.props;
+    return <div className="output">{value}</div>;
   }
 }
 

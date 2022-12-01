@@ -2,19 +2,32 @@ import { PureComponent } from 'react';
 
 import { Button, Output } from '..';
 
+import calculate from '../../logic/calculate';
+
 import './styles/calculator.css';
 
 class Calculator extends PureComponent {
-  handelClick = () => 'handel something';
+  constructor() {
+    super();
+    this.state = { next: 0, operation: '', total: '' };
+  }
 
-  handelCalc = () => 'handel calc';
+  handelCalc = (mark) => {
+    const calc = calculate(this.state, mark);
+    this.setState({
+      next: calc.next ? calc.next : '',
+      operation: calc.operation ? calc.operation : '',
+      total: calc.total ? calc.total : '',
+    });
+  };
 
   render() {
+    const { next, operation, total } = this.state;
     return (
       <div className="wrapper">
-        <Output />
+        <Output value={`${total} ${operation} ${next}`} />
         <Button
-          handelClick={this.handelClick}
+          handelClick={this.handelCalc}
           className="btn light-gray"
           mark="AC"
         />
@@ -28,11 +41,11 @@ class Calculator extends PureComponent {
           className="btn light-gray"
           mark="%"
         />
-        <Button handelClick={this.handelCalc} className="btn orange" mark="/" />
+        <Button handelClick={this.handelCalc} className="btn orange" mark="÷" />
         <Button handelClick={this.handelCalc} className="btn" mark="7" />
         <Button handelClick={this.handelCalc} className="btn" mark="8" />
         <Button handelClick={this.handelCalc} className="btn" mark="9" />
-        <Button handelClick={this.handelCalc} className="btn orange" mark="X" />
+        <Button handelClick={this.handelCalc} className="btn orange" mark="x" />
         <Button handelClick={this.handelCalc} className="btn" mark="4" />
         <Button handelClick={this.handelCalc} className="btn" mark="5" />
         <Button handelClick={this.handelCalc} className="btn" mark="6" />
