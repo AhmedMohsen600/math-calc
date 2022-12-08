@@ -2,22 +2,20 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  width: 100%;
   -webkit-user-select: none;
   -webkit-user-drag: none;
 }
 
-body {
-  background: #e2c093;
-  display: grid;
-  place-content: center;
-  height: 100vh;
-  font-size: 2rem;
-}
-
 .container {
   height: 80vh;
-  width: 65vh;
   background-color: #000;
   border-radius: 1rem;
+  width: 90%;
   box-shadow: 7px 7px 5px 0 rgba(50, 50, 50, 0.75);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
