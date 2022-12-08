@@ -1,6 +1,21 @@
+section {
+  padding: 40px 90px;
+  min-height: 90vh;
+  background: #e2c093;
+  display: flex;
+}
+
 .wrapper {
   display: grid;
-  height: 100%;
-  width: 100%;
   grid-template-columns: repeat(4, 1fr);
+  margin: auto;
+  width: 60%;
+  height: 600px;
+  background-color: #000;
+  border-radius: 1rem;
+  box-shadow: 7px 7px 5px 0 rgba(50, 50, 50, 0.75);
+}
+
+h4 {
+  font-size: 50px;
 }

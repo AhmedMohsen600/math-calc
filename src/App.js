@@ -1,12 +1,12 @@
-import { Calculator } from './components';
-
 import './index.css';
+import Layout from './layouts/main';
+import PageRoutes from './router/page-routes';
 
 const App = () => {
   return (
-    <div className="container">
-      <Calculator />
-    </div>
+    <Layout>
+      <PageRoutes />
+    </Layout>
   );
 };
 
